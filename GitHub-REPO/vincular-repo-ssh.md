@@ -120,6 +120,9 @@ Luego indica clave aceptada (y se reporta vía correo).
 **Ejemplo de agregar una nueva rama**
 `git add GitHub_REPO/vincular-repo-ssh.md`
 
+**O Para agregar todo el contenido incluyendo subcarpetas**
+`git add .`
+
 **Poner nombre a la actualización a subir**
 `git commit -m "Actualizo procedimiento vincular-repo-ssh.md"`
 
@@ -138,3 +141,25 @@ Luego indica clave aceptada (y se reporta vía correo).
 **Para subir la actualización**
 `git push`
 
+---
+
+
+## 📦 Paso 6: Agregar nuevos repositorios
+
+**Inicializar repositorio Git local**
+`git init`
+
+**Renombrar la rama principal a "main"**
+`git branch -M main`
+
+**Conectar el repositorio local con GitHub**
+`git remote add origin git@github.com:jota_user/Mi_nuevo_server.git`
+
+**Agregar todos los archivos nuevos al área de preparación**
+`git add`
+
+**Confirmar los cambios con un mensaje descriptivo**
+`git commit -m "Primer comit: Comentario de lo que se hará."`
+
+**Subir los cambios al repositorio remoto en GitHub**
+`git push -u origin main`
