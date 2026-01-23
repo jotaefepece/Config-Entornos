@@ -146,8 +146,21 @@ Luego indica clave aceptada (y se reporta vía correo).
 
 ## 📦 Paso 6: Agregar nuevos repositorios
 
+
+**Al inicio**
+
+Crear Repositorio en sitio de Github.
+
+Crear Carpeta local con mismo nombre del repositorio creado.
+
+Ingresar dentro de la carpeta local y abrir el terminal.
+
+
 **Inicializar repositorio Git local**
 `git init`
+
+**Crear un archivo inicial de lectura**
+`echo "# nombredelrepositoriouotrotexto" >> README.md`
 
 **Renombrar la rama principal a "main"**
 `git branch -M main`
@@ -156,7 +169,7 @@ Luego indica clave aceptada (y se reporta vía correo).
 `git remote add origin git@github.com:jota_user/Mi_nuevo_server.git`
 
 **Agregar todos los archivos nuevos al área de preparación**
-`git add`
+`git add .`
 
 **Confirmar los cambios con un mensaje descriptivo**
 `git commit -m "Primer comit: Comentario de lo que se hará."`
