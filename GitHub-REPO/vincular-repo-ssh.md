@@ -165,8 +165,12 @@ Ingresar dentro de la carpeta local y abrir el terminal.
 **Renombrar la rama principal a "main"**
 `git branch -M main`
 
+
 **Conectar el repositorio local con GitHub**
-`git remote add origin git@github.com:jota_user/Mi_nuevo_server.git`
+`git remote set-url origin git@github.com:jota_user/Mi_nuevo_server.git`
+
+**Para el token en vez de la clave**
+`git remote -v`
 
 **Agregar todos los archivos nuevos al área de preparación**
 `git add .`
@@ -174,5 +178,5 @@ Ingresar dentro de la carpeta local y abrir el terminal.
 **Confirmar los cambios con un mensaje descriptivo**
 `git commit -m "Primer comit: Comentario de lo que se hará."`
 
-**Subir los cambios al repositorio remoto en GitHub**
+**Subir los cambios al repositorio remoto en GitHub por primera vez**
 `git push -u origin main`
